@@ -18,6 +18,12 @@
 		09A14F1E1903C09D00D8C29A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09A14EFD1903C09D00D8C29A /* Cocoa.framework */; };
 		09A14F261903C09D00D8C29A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09A14F241903C09D00D8C29A /* InfoPlist.strings */; };
 		09A14F281903C09D00D8C29A /* HelloStatusItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A14F271903C09D00D8C29A /* HelloStatusItemTests.m */; };
+		09A14F361903C0EA00D8C29A /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A14F341903C0EA00D8C29A /* MainWindowController.m */; };
+		09A14F371903C0EA00D8C29A /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A14F351903C0EA00D8C29A /* MainWindowController.xib */; };
+		09A14F401903C49B00D8C29A /* Status.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A14F3C1903C49B00D8C29A /* Status.png */; };
+		09A14F411903C49B00D8C29A /* Status@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A14F3D1903C49B00D8C29A /* Status@2x.png */; };
+		09A14F421903C49B00D8C29A /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A14F3E1903C49B00D8C29A /* StatusHighlighted.png */; };
+		09A14F431903C49B00D8C29A /* StatusHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A14F3F1903C49B00D8C29A /* StatusHighlighted@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,13 @@
 		09A14F231903C09D00D8C29A /* HelloStatusItemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloStatusItemTests-Info.plist"; sourceTree = "<group>"; };
 		09A14F251903C09D00D8C29A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09A14F271903C09D00D8C29A /* HelloStatusItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloStatusItemTests.m; sourceTree = "<group>"; };
+		09A14F331903C0EA00D8C29A /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		09A14F341903C0EA00D8C29A /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		09A14F351903C0EA00D8C29A /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		09A14F3C1903C49B00D8C29A /* Status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status.png; sourceTree = "<group>"; };
+		09A14F3D1903C49B00D8C29A /* Status@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Status@2x.png"; sourceTree = "<group>"; };
+		09A14F3E1903C49B00D8C29A /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+		09A14F3F1903C49B00D8C29A /* StatusHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StatusHighlighted@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +128,10 @@
 		09A14F031903C09D00D8C29A /* HelloStatusItem */ = {
 			isa = PBXGroup;
 			children = (
+				09A14F321903C0DE00D8C29A /* Controllers */,
+				09A14F311903C0D700D8C29A /* Resources */,
 				09A14F0F1903C09D00D8C29A /* bearAppDelegate.h */,
 				09A14F101903C09D00D8C29A /* bearAppDelegate.m */,
-				09A14F121903C09D00D8C29A /* MainMenu.xib */,
 				09A14F151903C09D00D8C29A /* Images.xcassets */,
 				09A14F041903C09D00D8C29A /* Supporting Files */,
 			);
@@ -152,6 +166,36 @@
 				09A14F241903C09D00D8C29A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09A14F311903C0D700D8C29A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09A14F3B1903C49B00D8C29A /* icon */,
+				09A14F351903C0EA00D8C29A /* MainWindowController.xib */,
+				09A14F121903C09D00D8C29A /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		09A14F321903C0DE00D8C29A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09A14F331903C0EA00D8C29A /* MainWindowController.h */,
+				09A14F341903C0EA00D8C29A /* MainWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		09A14F3B1903C49B00D8C29A /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				09A14F3C1903C49B00D8C29A /* Status.png */,
+				09A14F3D1903C49B00D8C29A /* Status@2x.png */,
+				09A14F3E1903C49B00D8C29A /* StatusHighlighted.png */,
+				09A14F3F1903C49B00D8C29A /* StatusHighlighted@2x.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +278,12 @@
 				09A14F081903C09D00D8C29A /* InfoPlist.strings in Resources */,
 				09A14F161903C09D00D8C29A /* Images.xcassets in Resources */,
 				09A14F0E1903C09D00D8C29A /* Credits.rtf in Resources */,
+				09A14F431903C49B00D8C29A /* StatusHighlighted@2x.png in Resources */,
+				09A14F401903C49B00D8C29A /* Status.png in Resources */,
+				09A14F411903C49B00D8C29A /* Status@2x.png in Resources */,
+				09A14F421903C49B00D8C29A /* StatusHighlighted.png in Resources */,
 				09A14F141903C09D00D8C29A /* MainMenu.xib in Resources */,
+				09A14F371903C0EA00D8C29A /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A14F361903C0EA00D8C29A /* MainWindowController.m in Sources */,
 				09A14F111903C09D00D8C29A /* bearAppDelegate.m in Sources */,
 				09A14F0A1903C09D00D8C29A /* main.m in Sources */,
 			);
@@ -467,6 +517,7 @@
 				09A14F2D1903C09D00D8C29A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09A14F2E1903C09D00D8C29A /* Build configuration list for PBXNativeTarget "HelloStatusItemTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +526,7 @@
 				09A14F301903C09D00D8C29A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
